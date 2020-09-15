@@ -8,7 +8,7 @@ int main()
 	scanf("%u", &num);
 
 
-	for (unsigned div = 2; div*div <= num; div++)
+	for (unsigned div = 2; div*div <= num; div++) // **insight
 	{
 		if (num % div == 0)
 		{
