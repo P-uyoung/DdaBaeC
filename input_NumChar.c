@@ -15,16 +15,16 @@ int main()
 		while (getchar() != '\n') continue;	// ClearInputBuffer
 		display(c, rows, cols);
 
-		if (c == '\n') // Note :scanf() ¼¼°³ ¹Ş¾Æ¾ß break ÀĞ´Â »óÈ² ..
+		if (c == '\n') // Note :scanf() ì„¸ê°œ ë°›ì•„ì•¼ break ì½ëŠ” ìƒí™© ..
 			break;
 	}
 */
-	// **insight :¹®ÀÚ, ¼ıÀÚ ºĞ¸®ÇØ¼­ ¹Ş´Â´Ù
+	// **insight :ë¬¸ì, ìˆ«ì ë¶„ë¦¬í•´ì„œ ë°›ëŠ”ë‹¤
 	while ((c = getchar()) != '\n')
 	{
 		scanf("%d %d", &rows, &cols);
 		
-		while (getchar() != '\n') continue;
+		while (getchar() != '\n') continue;	// ClearInputBuffer
 		
 		display(c, rows, cols);
 
